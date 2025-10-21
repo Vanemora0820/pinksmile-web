@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contáctanos | Pink Smile</title>
+  <link rel="icon" type="image/png" href="/assets/img/ImgPinkSmile/logos/LogoRosado.jpg" />
+  <link rel="stylesheet" href="/assets/css/estilos.css">
+  <link rel="stylesheet" href="/assets/css/contacto.css">
+</head>
+<body>
+ <!-- NAVBAR -->
+    <header class="navbar">
+      <div class="container">
+        <a href="#" class="logo">
+          <img
+            src="/assets/img/ImgPinkSmile/logos/LogoOriginal.jpg"
+            alt="Pink Smile"
+          />
+        </a>
+        <nav class="nav-links">
+          <a href="#">Inicio</a>
+          <a href="/pages/quienes-somos.html">¿Quiénes Somos?</a>
+          <a href="/pages/portafolio.html">Portafolio</a>
+          <a href="#">Trabaja con Nosotros</a>
+        </nav>
+        <div class="nav-social">
+          <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+        </div>
+      </div>
+    </header>
+
+  <main class="contacto">
+    <section class="contacto-contenedor">
+      <h1>💌 Contáctanos</h1>
+      <p>Nos encanta leerte. Déjanos tu mensaje, sugerencia o idea para seguir creando sonrisas 🌷</p>
+
+      <form name="contacto" method="POST" data-netlify ="true" action="/pages/gracias.html" class="formulario-contacto">
+        <input type="hidden" name="form-name" value="contacto">
+        <div class="grupo">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+        </div>
+
+        <div class="grupo">
+          <label for="email">Correo electrónico</label>
+          <input type="email" id="email" name="email" placeholder="Tu correo" required>
+        </div>
+
+        <div class="grupo">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" rows="4" placeholder="Tu mensaje..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn-enviar">Enviar mensaje</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div>
+          <h4>Contáctanos</h4>
+          <p>Bogotá D.C. 📞 311 454 89 21</p>
+          <p>Calle 80 N° 102 - 64</p>
+          <p>📧 comercialsmilepink@gmail.com</p>
+          <a href="contacto.html">Escribenos 💌</a>
+        </div>
+        <div>
+          <h4>Atención al Cliente</h4>
+          <p>Buzón de Sugerencias</p>
+          <p>Preguntas Frecuentes</p>
+          <p>Cliente Frecuente</p>
+        </div>
+        <div>
+          <h4>Legal</h4>
+          <p>Política de Privacidad</p>
+          <p>Aviso de Privacidad</p>
+          <p>Términos y Condiciones</p>
+        </div>
+      </div>
+      <p class="copy">© 2025 Siteccy 💗 Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
