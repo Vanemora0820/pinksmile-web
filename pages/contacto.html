@@ -3,14 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Quiénes Somos | Pink Smile</title>
+  <title>Contáctanos | Pink Smile</title>
   <link rel="icon" type="image/png" href="/assets/img/ImgPinkSmile/logos/LogoRosado.jpg" />
   <link rel="stylesheet" href="/assets/css/estilos.css">
-  <link rel="stylesheet" href="/assets/css/quienes-somos.css">
-
+  <link rel="stylesheet" href="/assets/css/contacto.css">
 </head>
-<body>   
-    <!-- NAVBAR -->
+<body>
+ <!-- NAVBAR -->
     <header class="navbar">
       <div class="container">
         <a href="#" class="logo">
@@ -20,9 +19,9 @@
           />
         </a>
         <nav class="nav-links">
-          <a href="/index.html">Inicio</a>
-          <a href="#">¿Quiénes Somos?</a>
-          <a href="#">Portafolio</a>
+          <a href="#">Inicio</a>
+          <a href="/pages/quienes-somos.html">¿Quiénes Somos?</a>
+          <a href="/pages/portafolio.html">Portafolio</a>
           <a href="#">Trabaja con Nosotros</a>
         </nav>
         <div class="nav-social">
@@ -30,42 +29,35 @@
         </div>
       </div>
     </header>
-  <main class="about-section">
-    <section class="intro">
-      <h1>Quiénes Somos</h1>
-      <p>
-        En <strong>Pink Smile</strong> creemos que cada detalle cuenta.  
-        Nacimos del deseo de crear regalos únicos que transmitan emociones, gratitud y amor.
-      </p>
-    </section>
 
-    <section class="historia">
-      <h2>Nuestra historia</h2>
-      <p>
-        Desde nuestros primeros pasos, hemos creído que regalar es mucho más que entregar un objeto;
-        es compartir un pedacito de felicidad.  
-        Cada diseño, empaque y mensaje es una promesa de alegría y dedicación.
-      </p>
-    </section>
+  <main class="contacto">
+    <section class="contacto-contenedor">
+      <h1>💌 Contáctanos</h1>
+      <p>Nos encanta leerte. Déjanos tu mensaje, sugerencia o idea para seguir creando sonrisas 🌷</p>
 
-    <section class="mision-vision">
-      <div class="mision">
-        <h3>💖 Misión</h3>
-        <p>
-          Crear experiencias memorables a través de detalles únicos,
-          transmitiendo emociones genuinas y fortaleciendo los lazos entre las personas.
-        </p>
-      </div>
-      <div class="vision">
-        <h3>🌟 Visión</h3>
-        <p>
-          Ser una marca reconocida por inspirar sonrisas y amor en cada obsequio,
-          destacando por la creatividad, el servicio y el toque humano.
-        </p>
-      </div>
+      <form name="contacto" method="POST" data-netlify ="true" action="/pages/gracias.html" class="formulario-contacto">
+        <input type="hidden" name="form-name" value="contacto">
+        <div class="grupo">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+        </div>
+
+        <div class="grupo">
+          <label for="email">Correo electrónico</label>
+          <input type="email" id="email" name="email" placeholder="Tu correo" required>
+        </div>
+
+        <div class="grupo">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" rows="4" placeholder="Tu mensaje..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn-enviar">Enviar mensaje</button>
+      </form>
     </section>
   </main>
-<!-- FOOTER -->
+
+  <!-- FOOTER -->
     <footer class="footer">
       <div class="footer-container">
         <div>
@@ -73,7 +65,7 @@
           <p>Bogotá D.C. 📞 311 454 89 21</p>
           <p>Calle 80 N° 102 - 64</p>
           <p>📧 comercialsmilepink@gmail.com</p>
-          <a href="pages/contacto.html">Escribenos 💌</a>
+          <a href="contacto.html">Escribenos 💌</a>
         </div>
         <div>
           <h4>Atención al Cliente</h4>

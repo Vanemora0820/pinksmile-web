@@ -1,0 +1,71 @@
+/* === Página de contacto === */
+body {
+  background-color: #fff3f9;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.contacto-contenedor {
+  max-width: 700px;
+  margin: 100px auto;
+  background: white;
+  border-radius: 20px;
+  padding: 40px 30px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.contacto-contenedor h1 {
+  color: #e05297;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.contacto-contenedor p {
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.formulario-contacto .grupo {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.formulario-contacto label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #e05297;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #ffb6da;
+  border-radius: 10px;
+  outline: none;
+  font-size: 1em;
+}
+
+.formulario-contacto input:focus,
+.formulario-contacto textarea:focus {
+  border-color: #e05297;
+}
+
+.btn-enviar {
+  background-color: #e05297;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 25px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-enviar:hover {
+  background-color: #ff8cc4;
+}
