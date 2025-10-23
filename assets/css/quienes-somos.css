@@ -38,3 +38,35 @@
 margin-top: 75px;
 
 }
+
+/* 🔙 Botón de Inicio solo para móvil */
+.btn-home-mobile {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #ff80c2;
+  color: white;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+  transition: all 0.3s ease;
+}
+
+/* Efecto hover */
+.btn-home-mobile:hover {
+  background-color: #ff5c9f;
+  transform: scale(1.1);
+}
+
+/* Mostrar solo en pantallas pequeñas */
+@media (min-width: 768px) {
+  .btn-home-mobile {
+    display: none;
+  }
+}
