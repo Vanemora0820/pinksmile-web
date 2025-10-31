@@ -1,0 +1,235 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle at top, #ffeff5, #b72e5c);
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+}
+
+/* Contenedor central */
+.contenedor {
+  text-align: center;
+  backdrop-filter: blur(8px);
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+.titulo {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: #791b3f;
+}
+
+.titulo span {
+  color: #5e100d;
+  font-weight: 600;
+}
+
+.subtitulo {
+  font-size: 1.1em;
+  margin-bottom: 20px;
+  color: #fff5f8;
+}
+
+.boton {
+  padding: 12px 30px;
+  background-color: #ffbfd6;
+  color: #b72e5c;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.boton:hover {
+  background-color: #ff9fc4;
+}
+
+/* Estado oculto */
+.oculto {
+  display: none;
+}
+
+/* Animación al aparecer */
+.fade-in {
+  display: inline-block;
+  animation: fadeIn 0.5s ease forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* -------------------
+   FOOTER
+------------------- */
+.footer {
+  width: 100%;
+  background-color: #fff;
+  border-top: 2px solid #ffe1ea;
+  padding: 40px 0 20px;
+  position: absolute;
+  bottom: 0;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+  gap: 20px;
+}
+
+.footer-container div h4 {
+  color: #e85d8b;
+  margin-bottom: 10px;
+}
+
+.footer-container p,
+.footer-container a {
+  font-size: 0.9rem;
+  color: #555;
+  text-decoration: none;
+}
+
+.footer-container a:hover {
+  color: #b72e5c;
+}
+
+.copy {
+  text-align: center;
+  font-size: 0.85rem;
+  margin-top: 20px;
+  color: #888;
+}
+
+.footer {
+  position: relative; /* importante para que el footer esté debajo del contenido */
+}
+
+/* Evitar que el contenido quede oculto por el footer: 
+   en pantallas pequeñas damos espacio inferior al body */
+@media (max-width: 900px) {
+  /* Layout principal: contenedor más ancho y con margen */
+  .contenedor {
+    width: 92%;
+    padding: 28px;
+    margin: 40px auto;
+  }
+
+  /* Títulos más pequeños para mejor ajuste */
+  .titulo {
+    font-size: 2.1rem;
+  }
+
+  .subtitulo {
+    font-size: 1rem;
+  }
+
+  .footer {
+  position: relative; /* importante para que el footer esté debajo del contenido */
+ }
+}
+/* Evitar que el contenido quede oculto por el footer: 
+   en pantallas pequeñas damos espacio inferior al body */
+@media (max-width: 900px) {
+  /* Layout principal: contenedor más ancho y con margen */
+  .contenedor {
+    width: 92%;
+    padding: 28px;
+    margin: 40px auto;
+  }
+
+  /* Títulos más pequeños para mejor ajuste */
+  .titulo {
+    margin-top: 300px;
+    font-size: 2.1rem;
+  }
+
+  .subtitulo {
+    font-size: 1rem;
+  }
+
+  /* Botón más accesible en pantallas pequeñas */
+  .boton {
+    padding: 12px 22px;
+    font-size: 0.98rem;
+  }
+
+  /* Footer: columnas verticales */
+  .footer-container {
+    flex-direction: column;
+    gap: 18px;
+    align-items: center;
+    padding: 0 20px;
+  }
+
+  .footer {
+    padding: 30px 0 30px;
+  }
+
+  .copy {
+    margin-top: 18px;
+  }
+}
+
+/* Ajustes más específicos para móviles muy pequeños */
+@media (max-width: 480px) {
+  body {
+    min-height: 100vh;
+  }
+
+  .contenedor {
+    width: 94%;
+    padding: 20px;
+    margin: 20px auto;
+  }
+
+  .titulo {
+    font-size: 1.9rem;
+    line-height: 1.1;
+  }
+
+  .subtitulo {
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+
+  .boton {
+    padding: 11px 18px;
+    font-size: 0.95rem;
+    border-radius: 26px;
+  }
+
+  /* Reducir espacio en footer y ajustar textos */
+  .footer-container div p,
+  .footer-container div a {
+    font-size: 0.88rem;
+  }
+
+  .footer {
+    padding: 24px 10px;
+  }
+
+  .copy {
+    font-size: 0.82rem;
+  }
+}
+
+/* Si quieres un efecto visual al mostrar el botón en móvil:
+   suaviza su aparición (ya está la clase .fade-in) */
+@media (prefers-reduced-motion: reduce) {
+  .fade-in {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+}
