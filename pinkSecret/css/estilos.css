@@ -68,6 +68,34 @@ body {
   to { opacity: 1; transform: translateY(0); }
 }
 
+
+/* -------------------
+   REDES SOCIALES
+------------------- */
+.redes {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.redes h3 {
+  color: #e85d8b;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+.redes .links a {
+  color: #e85d8b;
+  margin: 0 10px;
+  font-size: 1.5rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.redes .links a:hover {
+  transform: scale(1.2);
+  color: #ff8fab;
+}
+
+
 /* -------------------
    FOOTER
 ------------------- */
@@ -231,5 +259,58 @@ body {
     animation: none;
     opacity: 1;
     transform: none;
+  }
+}
+
+/* === MENU HAMBURGUESA === */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  color: #e91e63;
+  cursor: pointer;
+}
+
+/* Vista móvil */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 75px;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-top: 2px solid #ffd1dc;
+    z-index: 999;
+  }
+
+  .nav-links.active {
+    display: flex;
+    animation: slideDown 0.3s ease-in-out;
+  }
+
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .nav-social {
+    display: none;
   }
 }

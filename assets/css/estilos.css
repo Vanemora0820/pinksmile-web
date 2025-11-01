@@ -204,6 +204,90 @@ body {
 .btn-secondary:hover {
   background: #ffe4ec;
 }
+.clientes-felices {
+  background-color: #fff8fb;
+  padding: 60px 20px;
+  text-align: center;
+  color: #b72e5c;
+}
+
+.section-title {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #b72e5c;
+}
+
+.section-subtitle {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+/* CONTENEDOR */
+.carrusel-container {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+/* TRACK */
+.carrusel-track {
+  display: flex;
+  transition: transform 0.8s ease-in-out;
+}
+
+/* TARJETAS */
+.cliente-card {
+  min-width: 100%;
+  box-sizing: border-box;
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 30px 25px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.cliente-card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #ffc2d4;
+  margin-bottom: 15px;
+}
+
+.cliente-card p {
+  color: #444;
+  font-style: italic;
+  margin-bottom: 15px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.nombre-cliente {
+  font-weight: bold;
+  color: #e91e63;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .cliente-card {
+    padding: 25px 15px;
+  }
+
+  .section-title {
+    font-size: 1.6em;
+  }
+
+  .section-subtitle {
+    font-size: 0.9rem;
+  }
+}
+
+
+
 
 /* -------------------
    FRASE
